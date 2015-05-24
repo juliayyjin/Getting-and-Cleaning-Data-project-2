@@ -1,0 +1,19 @@
+---
+title: "ReadMe"
+output: html_document
+---
+#Introduction
+The script run_analysis.R performs the 5 steps described in the course project's definition.
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+#Variables
+1. xTrain, yTrain, xTest, yTest, subjectTrain and subjectTest contain the data from the downloaded files.
+2. xdata, ydata and subjectdata merge the previous datasets to further analysis.
+3. features contains the correct names for the xdata, which are applied to the column names stored in meanstd, a numeric vector used to extract the desired data.A similar approach is taken with activity names through the activities variable.
+4. Alldata merges xdata, ydata and subjectdata.
+5. Finally, cleandata contains the relevant averages which will be later stored in a .txt file.
