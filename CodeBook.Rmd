@@ -1,0 +1,13 @@
+---
+title: "Code Book"
+output: html_document
+---
+
+#Variables
+1. xTrain, yTrain, xTest, yTest, subjectTrain and subjectTest contain the data from the downloaded files.
+2. xdata, ydata and subjectdata merge the previous datasets.
+3. features contains the correct names for the xdata.
+   meanstd is a numeric vector contain means ans std.
+   activity contians all the activities variable.
+4. Alldata merges xdata, ydata and subjectdata.
+5. cleandata is the result after all the procedures.
